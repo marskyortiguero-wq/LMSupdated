@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LMS | College of Industrial Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="views.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="arc.css" />
+  <link rel="stylesheet" href="modules.css" />
+  <link rel="stylesheet" href="preview.css" />
+  <link rel="stylesheet" href="auth.css" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <main class="auth-screen" id="authScreen">
+    <section class="auth-panel" aria-labelledby="authTitle">
+      <a class="auth-brand" href="#" aria-label="CIT Learn home"><span class="brand-mark">CIT</span><span><strong>CIT Learn</strong><small>College of Industrial Technology</small></span></a>
+      <div class="auth-heading">
+        <p class="eyebrow">CIT LEARNING HUB</p>
+        <h1 id="authTitle">Welcome back.</h1>
+        <p class="auth-subtitle">Sign in to access the learning hub.</p>
+      </div>
+      <form class="auth-form" id="loginForm">
+        <label for="loginAccountId">Account ID</label>
+        <input id="loginAccountId" name="accountId" type="text" autocomplete="username" placeholder="Enter your account ID" required>
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+        <button class="auth-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        <p class="auth-demo-note">Use your registered account ID and password.</p>
+      </form>
+      <p class="auth-footer">CIT Learning Hub <span>·</span> Academic Year 2026–2027</p>
+    </section>
+    <aside class="auth-art" aria-label="CIT Learning Hub">
+      <div class="auth-art-top"><span>COLLEGE OF INDUSTRIAL TECHNOLOGY</span><span>01 / LEARN</span></div>
+      <div class="auth-art-copy"><p>MAKE IT<br><em>REAL.</em></p><span>Skills for the systems shaping tomorrow.</span></div>
+      <div class="auth-art-bottom"><span>CIT LEARNING ARC</span><span>BUILD · PRACTICE · PROGRESS</span></div>
+    </aside>
+  </main>
+  <div class="app-shell" id="appShell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">CIT</div>
+        <div>
+          <strong>CIT Learn</strong>
+          <span>College of Industrial<br />Technology</span>
+        </div>
+      </div>
+      <div class="profile-mini">
+        <div class="avatar" id="profileAvatar">C</div>
+        <div><strong id="profileName">CIT account</strong><span id="profileRole">Learning workspace</span></div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <p class="nav-label">Workspace</p>
+        <button class="nav-item active" data-view="learning-arc"><span class="nav-icon">✦</span>CIT Learning Arc</button>
+        <button class="nav-item" data-view="overview"><span class="nav-icon">⌂</span>Overview</button>
+        <button class="nav-item" data-view="courses"><span class="nav-icon">▦</span>My courses <em>4</em></button>
+        <button class="nav-item" data-view="syllabus"><span class="nav-icon">☷</span>Syllabus</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="help-icon">?</span>
+          <strong>Need a hand?</strong>
+          <small>Visit the CIT help desk</small>
+          <button>Open support →</button>
+        </div>
+        <button class="nav-item"><span class="nav-icon">⚙</span>Settings</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="pageTitle">CIT Learning Arc</strong></div>
+        <div class="topbar-actions">
+          <button class="logout-button" id="logoutButton" type="button">Sign out</button>
+          <label class="year-selector-label topbar-year-label" for="yearSelector">Year level</label>
+          <select id="yearSelector" class="year-selector topbar-year-selector" aria-label="Select student year">
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year" selected>2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+            <option value="4th Year">4th Year</option>
+          </select>
+        </div>
+      </header>
+
+      <div class="page-container" id="pageContainer">
+        <section class="welcome-row">
+          <div>
+            <p class="eyebrow">MONDAY, SEPTEMBER 28, 2026</p>
+            <h1 id="greeting">Good morning.</h1>
+            <p class="subtitle">Here is what is happening with your learning today.</p>
+          </div>
+          <button class="primary-button" id="quickAction">+ <span>Quick action</span></button>
+        </section>
+
+        <section class="stats-grid" aria-label="Learning summary">
+          <article class="stat-card accent-coral">
+            <div class="stat-top"><span>Active courses</span><span class="stat-symbol">◒</span></div>
+            <strong>04</strong><small>this semester</small>
+          </article>
+          <article class="stat-card accent-lime">
+            <div class="stat-top"><span>Overall progress</span><span class="stat-symbol">↗</span></div>
+            <strong>78<span>%</span></strong><small><b>+6%</b> from last week</small>
+          </article>
+          <article class="stat-card accent-blue">
+            <div class="stat-top"><span>Tasks due</span><span class="stat-symbol">◷</span></div>
+            <strong>03</strong><small>next 7 days</small>
+          </article>
+          <article class="stat-card accent-yellow">
+            <div class="stat-top"><span>Study streak</span><span class="stat-symbol">✦</span></div>
+            <strong>12 <span>days</span></strong><small>Personal best: 18 days</small>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="main-column">
+            <div class="section-heading"><div><p class="eyebrow">KEEP LEARNING</p><h2>Continue your courses</h2></div><button class="text-button" data-view="courses">View all <span>→</span></button></div>
+            <div class="course-list" id="courseList">
+              <article class="course-card" data-course="web">
+                <div class="course-color coral"><span>WD</span></div>
+                <div class="course-info"><div class="course-title-row"><h3>Web Development</h3><span class="course-code">IT 204</span><span class="year-badge year-2">2nd Year</span></div><p>Prof. Maria Santos · Module 6 of 8</p><div class="progress-line"><i style="width: 72%"></i></div><small>72% complete</small></div><button class="arrow-button" aria-label="Open Web Development">↗</button>
+  <button class="arrow-button" data-course="web" aria-label="Open Web Development">↗</button>
+              </article>
+              <article class="course-card" data-course="database">
+                <div class="course-color navy"><span>DB</span></div>
+                <div class="course-info"><div class="course-title-row"><h3>Database Management</h3><span class="course-code">IT 206</span><span class="year-badge year-2">2nd Year</span></div><p>Prof. Carlo Reyes · Module 4 of 10</p><div class="progress-line"><i style="width: 48%"></i></div><small>48% complete</small></div><button class="arrow-button" aria-label="Open Database Management">↗</button>
+  <button class="arrow-button" data-course="database" aria-label="Open Database Management">↗</button>
+              </article>
+              <article class="course-card" data-course="networking">
+                <div class="course-color lime"><span>NW</span></div>
+                <div class="course-info"><div class="course-title-row"><h3>Computer Networking</h3><span class="course-code">IT 208</span><span class="year-badge year-2">2nd Year</span></div><p>Prof. Anna Lim · Module 7 of 9</p><div class="progress-line"><i style="width: 84%"></i></div><small>84% complete</small></div><button class="arrow-button" aria-label="Open Computer Networking">↗</button>
+  <button class="arrow-button" data-course="networking" aria-label="Open Computer Networking">↗</button>
+              </article>
+            </div>
+
+            <div class="section-heading upcoming-heading"><div><p class="eyebrow">YOUR WEEK</p><h2>Upcoming tasks</h2></div><button class="filter-button" id="filterButton">All tasks <span>⌄</span></button></div>
+            <div class="task-table" id="taskTable">
+              <div class="task-row"><div class="task-date"><strong>30</strong><span>SEP</span></div><div class="task-detail"><strong>Build a responsive portfolio</strong><span>Web Development · Assignment</span></div><span class="priority high">Due in 2 days</span><button class="more-button">•••</button></div>
+              <div class="task-row"><div class="task-date"><strong>02</strong><span>OCT</span></div><div class="task-detail"><strong>SQL normalization exercises</strong><span>Database Management · Activity</span></div><span class="priority medium">Due in 4 days</span><button class="more-button">•••</button></div>
+              <div class="task-row"><div class="task-date"><strong>04</strong><span>OCT</span></div><div class="task-detail"><strong>Subnetting practical quiz</strong><span>Computer Networking · Quiz</span></div><span class="priority low">Due in 6 days</span><button class="more-button">•••</button></div>
+            </div>
+          </div>
+
+          <aside class="right-column">
+            <section class="quote-card"><span class="quote-mark">“</span><p>Learning is a continuous process. Every module completed is a skill earned.</p><small>CIT Learning Hub</small></section>
+          </aside>
+        </section>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast">Quick action menu opened</div>
+  <script src="app.js"></script>
+</body>
+</html>
